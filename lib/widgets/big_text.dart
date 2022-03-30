@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 
 class BigText extends StatelessWidget {
   //input paramitter
-  final Color? color;
+  Color? color;
   final String text;
   double size;
   TextOverflow overFlow;
   BigText(
       {Key? key,
-      this.color,
+      this.color = const Color(0xFF332d2b),
       required this.text,
       this.size = 20,
       this.overFlow = TextOverflow.ellipsis})
@@ -21,6 +21,7 @@ class BigText extends StatelessWidget {
       overflow: overFlow,
       style: TextStyle(
         fontFamily: 'Roboto',
+        fontSize: size,
         color: color,
         fontWeight: FontWeight.w400,
       ),
