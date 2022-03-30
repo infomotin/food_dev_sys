@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_dev_sys/widgets/big_text.dart';
 
 class MainProdPage extends StatefulWidget {
   const MainProdPage({Key? key}) : super(key: key);
@@ -22,7 +23,10 @@ class _MainProdPageState extends State<MainProdPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
-                    children: [Text("Countrt"), Text("City")],
+                    children: [
+                      BigText(text: "Bangladesh", size: 30, color: Colors.blue),
+                      Text("City")
+                    ],
                   ),
                   Container(
                     width: 45,
