@@ -26,8 +26,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       //create a first slider
       height: 220,
       margin: EdgeInsets.only(left: 5, right: 5),
-      decoration: BorderRadius.circular(30),
-      color: Color(0xFF69c5df),
+      decoration: BoxDecoration(
+          color: Color(0xFF69c5df), borderRadius: BorderRadius.circular(30)),
     );
   }
 }

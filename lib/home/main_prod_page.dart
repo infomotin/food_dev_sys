@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_dev_sys/home/prod_page_body.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
 import 'package:food_dev_sys/widgets/smal_text.dart';
 
@@ -49,6 +50,7 @@ class _MainProdPageState extends State<MainProdPage> {
               ),
             ),
           ),
+          ProdPageBody()
         ],
       ),
     );
