@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
+import 'package:food_dev_sys/widgets/smal_text.dart';
 
 class MainProdPage extends StatefulWidget {
   const MainProdPage({Key? key}) : super(key: key);
@@ -25,7 +26,9 @@ class _MainProdPageState extends State<MainProdPage> {
                   Column(
                     children: [
                       BigText(text: "Bangladesh", size: 30, color: Colors.blue),
-                      Text("City")
+                      SmallText(
+                        text: "City",
+                      )
                     ],
                   ),
                   Container(
