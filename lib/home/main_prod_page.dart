@@ -26,8 +26,13 @@ class _MainProdPageState extends State<MainProdPage> {
                   Column(
                     children: [
                       BigText(text: "Bangladesh", size: 30, color: Colors.blue),
-                      SmallText(
-                        text: "City",
+                      Row(
+                        children: [
+                          SmallText(
+                            text: "Jhenaidah",
+                          ),
+                          Icon(Icons.arrow_drop_down_rounded)
+                        ],
                       )
                     ],
                   ),
