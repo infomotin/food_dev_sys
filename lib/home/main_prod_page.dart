@@ -17,6 +17,7 @@ class _MainProdPageState extends State<MainProdPage> {
           Container(
             child: Container(
               margin: EdgeInsets.only(top: 45, bottom: 12),
+              padding: EdgeInsets.only(left: 20, right: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
