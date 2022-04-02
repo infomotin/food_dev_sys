@@ -31,6 +31,7 @@ class _MainProdPageState extends State<MainProdPage> {
                         children: [
                           SmallText(
                             text: "Jhenaidah",
+                            color: Color(0xFFcccab0),
                           ),
                           Icon(Icons.arrow_drop_down_rounded)
                         ],

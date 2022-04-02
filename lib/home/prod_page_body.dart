@@ -11,6 +11,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 320,
       child: PageView.builder(
           itemCount: 5,
           itemBuilder: (context, position) {
@@ -27,7 +28,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       height: 220,
       margin: EdgeInsets.only(left: 5, right: 5),
       decoration: BoxDecoration(
-          color: Color(0xFF69c5df), borderRadius: BorderRadius.circular(30)),
+          color: Color(0xFFcccab0), borderRadius: BorderRadius.circular(30)),
     );
   }
 }
