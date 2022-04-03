@@ -28,7 +28,9 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       height: 220,
       margin: EdgeInsets.only(left: 5, right: 5),
       decoration: BoxDecoration(
-          color: Color(0xFFcccab0), borderRadius: BorderRadius.circular(30)),
+          color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
+          borderRadius: BorderRadius.circular(30),
+          image: DecorationImage(image: AssetImage("assets/image/prod1.png"))),
     );
   }
 }
