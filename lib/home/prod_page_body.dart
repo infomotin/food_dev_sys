@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class ProdPageBody extends StatefulWidget {
   const ProdPageBody({Key? key}) : super(key: key);
@@ -11,6 +12,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // for debug adding
+      color: Colors.redAccent,
       height: 320,
       child: PageView.builder(
           itemCount: 5,
@@ -30,7 +33,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       decoration: BoxDecoration(
           color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
           borderRadius: BorderRadius.circular(30),
-          image: DecorationImage(image: AssetImage("image/prod2.png"))),
+          image: DecorationImage(
+              fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
     );
   }
 }
