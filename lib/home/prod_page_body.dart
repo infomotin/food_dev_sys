@@ -39,15 +39,18 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                   fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
         ),
         //overlap container
-        Container(
-          //create a first slider
-          height: 220,
-          margin: EdgeInsets.only(left: 15, right: 15),
-          decoration: BoxDecoration(
-              color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
-              borderRadius: BorderRadius.circular(30),
-              image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
+        Align(
+          alignment: Alignment.bottomCenter,
+          child: Container(
+            //create a first slider
+            height: 150,
+            margin: EdgeInsets.only(left: 40, right: 40),
+            decoration: BoxDecoration(
+                color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
+                borderRadius: BorderRadius.circular(30),
+                image: DecorationImage(
+                    fit: BoxFit.cover, image: AssetImage("image/prod3.png"))),
+          ),
         )
       ],
     );
