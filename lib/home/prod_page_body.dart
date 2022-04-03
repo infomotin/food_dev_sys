@@ -101,10 +101,20 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                   Row(
                     children: [
                       TextAndIconWidget(
-                        icon: Icons.circle_sharp,
-                        text: "Normal",
-                        iconColor: Colors.lightBlue,
-                      ),
+                          icon: Icons.circle_sharp,
+                          text: "Normal",
+                          textColor: Colors.black45,
+                          iconColor: Colors.brown),
+                      TextAndIconWidget(
+                          icon: Icons.star,
+                          text: "STAR",
+                          textColor: Colors.pink,
+                          iconColor: Colors.lightBlue),
+                      TextAndIconWidget(
+                          icon: Icons.search,
+                          text: "Search",
+                          textColor: Colors.blue,
+                          iconColor: Colors.black45),
                     ],
                   )
                 ],
