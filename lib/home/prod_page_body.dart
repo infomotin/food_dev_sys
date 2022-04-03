@@ -9,7 +9,7 @@ class ProdPageBody extends StatefulWidget {
 }
 
 class _ProdPageBodyState extends State<ProdPageBody> {
-  PageController pageController = PageController()
+  PageController pageController = PageController(viewportFraction: 0.85);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -17,6 +17,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       color: Colors.redAccent,
       height: 320,
       child: PageView.builder(
+          controller: pageController,
           itemCount: 5,
           itemBuilder: (context, position) {
             //create a function that return a container with index positions
