@@ -9,6 +9,7 @@ class ProdPageBody extends StatefulWidget {
 }
 
 class _ProdPageBodyState extends State<ProdPageBody> {
+  PageController pageController = PageController()
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -43,13 +44,12 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           alignment: Alignment.bottomCenter,
           child: Container(
             //create a first slider
-            height: 150,
-            margin: EdgeInsets.only(left: 40, right: 40),
+            height: 140,
+            margin: EdgeInsets.only(left: 40, right: 40, bottom: 10),
             decoration: BoxDecoration(
-                color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
-                borderRadius: BorderRadius.circular(30),
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: AssetImage("image/prod3.png"))),
+              borderRadius: BorderRadius.circular(30),
+              color: Colors.white,
+            ),
           ),
         )
       ],
