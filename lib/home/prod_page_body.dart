@@ -26,15 +26,30 @@ class _ProdPageBodyState extends State<ProdPageBody> {
 
   //declear fun body
   Widget _buildPageProdItem(int index) {
-    return Container(
-      //create a first slider
-      height: 220,
-      margin: EdgeInsets.only(left: 5, right: 5),
-      decoration: BoxDecoration(
-          color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
-          borderRadius: BorderRadius.circular(30),
-          image: DecorationImage(
-              fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
+    return Stack(
+      children: [
+        Container(
+          //create a first slider
+          height: 220,
+          margin: EdgeInsets.only(left: 5, right: 5),
+          decoration: BoxDecoration(
+              color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
+              borderRadius: BorderRadius.circular(30),
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
+        ),
+        //overlap container
+        Container(
+          //create a first slider
+          height: 220,
+          margin: EdgeInsets.only(left: 15, right: 15),
+          decoration: BoxDecoration(
+              color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
+              borderRadius: BorderRadius.circular(30),
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
+        )
+      ],
     );
   }
 }
