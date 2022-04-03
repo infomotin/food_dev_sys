@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
 import 'package:food_dev_sys/widgets/smal_text.dart';
+import 'package:food_dev_sys/widgets/text_and_icone_widget.dart';
 
 class ProdPageBody extends StatefulWidget {
   const ProdPageBody({Key? key}) : super(key: key);
@@ -35,7 +36,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         Container(
           //create a first slider
           height: 220,
-          margin: EdgeInsets.only(left: 5, right: 5),
+          margin: EdgeInsets.only(left: 15, right: 15),
           decoration: BoxDecoration(
               color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
               borderRadius: BorderRadius.circular(30),
@@ -47,14 +48,14 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           alignment: Alignment.bottomCenter,
           child: Container(
             //create a first slider
-            height: 140,
-            margin: EdgeInsets.only(left: 30, right: 30, bottom: 15),
+            height: 120,
+            margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: Colors.white,
             ),
             child: Container(
-              padding: EdgeInsets.only(top: 15, left: 15, right: 15),
+              padding: EdgeInsets.only(top: 10, left: 15, right: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -79,7 +80,31 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                       SmallText(
                         text: "4.5",
                         color: Colors.black54,
-                      )
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      SmallText(text: "1254"),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      SmallText(
+                        text: "Comments.",
+                        color: Colors.black45,
+                      ),
+                    ],
+                  ),
+                  //create space
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      TextAndIconWidget(
+                        icon: Icons.circle_sharp,
+                        text: "Normal",
+                        iconColor: Colors.lightBlue,
+                      ),
                     ],
                   )
                 ],
