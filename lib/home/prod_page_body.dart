@@ -30,7 +30,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       decoration: BoxDecoration(
           color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
           borderRadius: BorderRadius.circular(30),
-          image: DecorationImage(image: AssetImage("assets/image/prod1.png"))),
+          image: DecorationImage(image: AssetImage("image/prod2.png"))),
     );
   }
 }
