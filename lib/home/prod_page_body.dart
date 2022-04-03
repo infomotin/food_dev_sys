@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_dev_sys/widgets/big_text.dart';
 
 class ProdPageBody extends StatefulWidget {
   const ProdPageBody({Key? key}) : super(key: key);
@@ -46,10 +47,34 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           child: Container(
             //create a first slider
             height: 140,
-            margin: EdgeInsets.only(left: 40, right: 40, bottom: 10),
+            margin: EdgeInsets.only(left: 30, right: 30, bottom: 15),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: Colors.white,
+            ),
+            child: Container(
+              padding: EdgeInsets.only(top: 10, left: 15, right: 15),
+              child: Column(
+                children: [
+                  BigText(text: "Chines Side"),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    children: [
+                      Wrap(
+                        children: List.generate(
+                            5,
+                            (index) => Icon(
+                                  Icons.star,
+                                  color: Colors.red,
+                                  size: 15,
+                                )),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         )
