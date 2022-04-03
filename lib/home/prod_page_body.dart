@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
+import 'package:food_dev_sys/widgets/smal_text.dart';
 
 class ProdPageBody extends StatefulWidget {
   const ProdPageBody({Key? key}) : super(key: key);
@@ -53,8 +54,9 @@ class _ProdPageBodyState extends State<ProdPageBody> {
               color: Colors.white,
             ),
             child: Container(
-              padding: EdgeInsets.only(top: 10, left: 15, right: 15),
+              padding: EdgeInsets.only(top: 15, left: 15, right: 15),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   BigText(text: "Chines Side"),
                   SizedBox(
@@ -70,6 +72,13 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                                   color: Colors.red,
                                   size: 15,
                                 )),
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      SmallText(
+                        text: "4.5",
+                        color: Colors.black54,
                       )
                     ],
                   )
