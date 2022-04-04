@@ -106,7 +106,14 @@ class _ProdPageBodyState extends State<ProdPageBody> {
               height: 120,
               margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black38,
+                    blurRadius: 5.0,
+                    offset: Offset(0, 5),
+                  )
+                ],
                 color: Colors.white,
               ),
               child: Container(
