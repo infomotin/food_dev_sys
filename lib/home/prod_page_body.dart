@@ -13,6 +13,20 @@ class ProdPageBody extends StatefulWidget {
 
 class _ProdPageBodyState extends State<ProdPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
+  //contain page value with variable
+  var _currentPageValue = 0.0;
+
+  @override
+  void initState() {
+    super.initState();
+    pageController.addListener(() {
+      setState(() {
+        _currentPageValue = pageController.page!;
+        print("Crrunt Page Value is:" + _currentPageValue.toString());
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -59,7 +73,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  BigText(text: "Chines Side"),
+                  BigText(text: "Chinese Side"),
                   SizedBox(
                     height: 10,
                   ),
