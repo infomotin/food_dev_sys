@@ -25,7 +25,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
     pageController.addListener(() {
       setState(() {
         _currentPageValue = pageController.page!;
-        // print("Current Page Value is:" + _currentPageValue.toString());
+        print("Current Page Value is:" + _currentPageValue.toString());
       });
     });
   }
@@ -60,7 +60,11 @@ class _ProdPageBodyState extends State<ProdPageBody> {
     // if match current page value and index are same than got staple
     if (index == _currentPageValue.floor()) {
       var currScale = 1 - (_currentPageValue - index) * (1 - _scaleFacto);
-      print("currScale" + currScale.toString());
+      print("currScale :" + currScale.toString());
+    } else if (index == _currentPageValue.floor() + 1) {
+      var currScale =
+          _scaleFacto + (_currentPageValue - index + 1) * (1 - _scaleFacto);
+      print("currScale :" + currScale.toString());
     }
     return Stack(
       children: [
