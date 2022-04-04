@@ -15,16 +15,26 @@ class _ProdPageBodyState extends State<ProdPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
   //contain page value with variable
   var _currentPageValue = 0.0;
+  //80% bigger than crrunt size
+  double _scaleFacto = 0.8;
 
+  // initPage if in enter this page then do some thing
   @override
   void initState() {
     super.initState();
     pageController.addListener(() {
       setState(() {
         _currentPageValue = pageController.page!;
-        print("Crrunt Page Value is:" + _currentPageValue.toString());
+        // print("Current Page Value is:" + _currentPageValue.toString());
       });
     });
+  }
+
+// dispose Page then do something
+  @override
+  void dispose() {
+    // working with memory mgnege sys clean memory
+    pageController.dispose();
   }
 
   @override
@@ -45,6 +55,13 @@ class _ProdPageBodyState extends State<ProdPageBody> {
 
   //declear fun body
   Widget _buildPageProdItem(int index) {
+    // create a instance matrix4 ?
+    Matrix4 matrix4 = new Matrix4.identity();
+    // if match current page value and index are same than got staple
+    if (index == _currentPageValue.floor()) {
+      var currScale = 1 - (_currentPageValue - index) * (1 - _scaleFacto);
+      print("currScale" + currScale.toString());
+    }
     return Stack(
       children: [
         Container(
