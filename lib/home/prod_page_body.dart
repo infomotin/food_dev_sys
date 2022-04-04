@@ -17,7 +17,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
   Widget build(BuildContext context) {
     return Container(
       // for debug adding
-      color: Colors.redAccent,
+      // color: Colors.redAccent,
       height: 320,
       child: PageView.builder(
           controller: pageController,
@@ -106,14 +106,14 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                           textColor: Colors.black45,
                           iconColor: Colors.brown),
                       TextAndIconWidget(
-                          icon: Icons.star,
-                          text: "STAR",
+                          icon: Icons.location_on,
+                          text: "1.7 Km",
                           textColor: Colors.pink,
                           iconColor: Colors.lightBlue),
                       TextAndIconWidget(
-                          icon: Icons.search,
-                          text: "Search",
-                          textColor: Colors.blue,
+                          icon: Icons.access_time,
+                          text: "35 Minutes",
+                          textColor: Colors.red,
                           iconColor: Colors.black45),
                     ],
                   )
