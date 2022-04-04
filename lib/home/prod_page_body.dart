@@ -66,7 +66,6 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       matrix = Matrix4.diagonal3Values(1, currScale, 1)
         ..setTranslationRaw(0, currTrans, 0);
       print(matrix.toString());
-      // print("currScale :" + currScale.toString());
     } else if (index == _currentPageValue.floor() + 1) {
       var currScale =
           _scaleFacto + (_currentPageValue - index + 1) * (1 - _scaleFacto);
@@ -74,16 +73,12 @@ class _ProdPageBodyState extends State<ProdPageBody> {
       var currTrans = _height * (1 - currScale) / 2;
       matrix = Matrix4.diagonal3Values(1, currScale, 1)
         ..setTranslationRaw(0, currTrans, 0);
-      print(matrix.toString());
-      // print("currScale :" + currScale.toString());
     } else if (index == _currentPageValue.floor() - 1) {
       var currScale = 1 - (_currentPageValue - index) * (1 - _scaleFacto);
       matrix = Matrix4.diagonal3Values(1, currScale, 1);
       var currTrans = _height * (1 - currScale) / 2;
       matrix = Matrix4.diagonal3Values(1, currScale, 1)
         ..setTranslationRaw(0, currTrans, 0);
-      print(matrix.toString());
-      // print("currScale :" + currScale.toString());
     }
     return Transform(
       transform: matrix,
