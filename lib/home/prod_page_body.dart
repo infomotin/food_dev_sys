@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_dev_sys/utils/dimension.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
 import 'package:food_dev_sys/widgets/smal_text.dart';
 import 'package:food_dev_sys/widgets/text_and_icone_widget.dart';
@@ -22,7 +23,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
   double _scaleFacto = 0.8;
 
   //get parrent height
-  double _height = 220;
+  double _height = Dimensions.pageViewContainer;
 
   // initPage if in enter this page then do some thing
   @override
@@ -50,7 +51,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         Container(
           // for debug adding
           // color: Colors.redAccent,
-          height: 320,
+          height: Dimensions.pageView,
           child: PageView.builder(
               controller: pageController,
               itemCount: 5,
@@ -111,7 +112,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         children: [
           Container(
             //create a first slider
-            height: 220,
+            height: Dimensions.pageViewContainer,
             margin: EdgeInsets.only(left: 15, right: 15),
             decoration: BoxDecoration(
                 color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
@@ -124,7 +125,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
             alignment: Alignment.bottomCenter,
             child: Container(
               //create a first slider
-              height: 120,
+              height: Dimensions.pageViewTextContainer,
               margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),

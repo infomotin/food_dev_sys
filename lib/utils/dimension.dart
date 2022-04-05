@@ -6,6 +6,7 @@ class Dimensions {
   // static double factorialValueForContainer = screenHeight / 220;
   // static double factorialValueForTextContainer = screenHeight / 220;
   // use  heigth and width pageViewContainer
-  static double pageViewContainer = screenHeight / 3.48;
+  static double pageView = screenHeight / 2.64;
+  static double pageViewContainer = screenHeight / 3.84;
   static double pageViewTextContainer = screenHeight / 7.03;
 }
