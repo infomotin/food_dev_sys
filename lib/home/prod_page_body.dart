@@ -63,10 +63,13 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           dotsCount: 5,
           position: _currentPageValue,
           decorator: DotsDecorator(
+            activeColor: Colors.indigo,
             size: const Size.square(9.0),
             activeSize: const Size(18.0, 9.0),
             activeShape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5.0)),
+              borderRadius: BorderRadius.circular(5.0),
+              side: BorderSide.none,
+            ),
           ),
         ),
       ],
