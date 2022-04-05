@@ -13,10 +13,13 @@ class ProdPageBody extends StatefulWidget {
 
 class _ProdPageBodyState extends State<ProdPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
+
   //contain page value with variable
   var _currentPageValue = 0.0;
+
   //80% bigger than crrunt size
   double _scaleFacto = 0.8;
+
   //get parrent height
   double _height = 220;
 
@@ -27,7 +30,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
     pageController.addListener(() {
       setState(() {
         _currentPageValue = pageController.page!;
-        // print("Current Page Value is:" + _currentPageValue.toString());
+        print("Current Page Value is:" + _currentPageValue.toString());
       });
     });
   }
@@ -110,9 +113,9 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black38,
-                    blurRadius: 5.0,
+                    blurRadius: 8.0,
                     offset: Offset(0, 5),
-                  )
+                  ),
                 ],
                 color: Colors.white,
               ),

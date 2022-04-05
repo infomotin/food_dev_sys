@@ -43,6 +43,13 @@ class _MainProdPageState extends State<MainProdPage> {
                     height: 45,
                     child: Icon(Icons.search, color: Colors.white),
                     decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black38,
+                          blurRadius: 7.0,
+                          offset: Offset(5, 5),
+                        ),
+                      ],
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.blue,
                     ),
