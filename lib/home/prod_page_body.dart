@@ -1,3 +1,4 @@
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
@@ -6,16 +7,20 @@ import 'package:food_dev_sys/widgets/text_and_icone_widget.dart';
 
 class ProdPageBody extends StatefulWidget {
   const ProdPageBody({Key? key}) : super(key: key);
+
   @override
   State<ProdPageBody> createState() => _ProdPageBodyState();
 }
 
 class _ProdPageBodyState extends State<ProdPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
+
   //contain page value with variable
   var _currentPageValue = 0.0;
+
   //80% bigger than crrunt size
   double _scaleFacto = 0.8;
+
   //get parrent height
   double _height = 220;
 
@@ -53,6 +58,16 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 //create a function that return a container with index positions
                 return _buildPageProdItem(position);
               }),
+        ),
+        new DotsIndicator(
+          dotsCount: 5,
+          position: _currentPageValue,
+          decorator: DotsDecorator(
+            size: const Size.square(9.0),
+            activeSize: const Size(18.0, 9.0),
+            activeShape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0)),
+          ),
         ),
       ],
     );
