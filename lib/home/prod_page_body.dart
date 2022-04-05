@@ -6,20 +6,16 @@ import 'package:food_dev_sys/widgets/text_and_icone_widget.dart';
 
 class ProdPageBody extends StatefulWidget {
   const ProdPageBody({Key? key}) : super(key: key);
-
   @override
   State<ProdPageBody> createState() => _ProdPageBodyState();
 }
 
 class _ProdPageBodyState extends State<ProdPageBody> {
   PageController pageController = PageController(viewportFraction: 0.85);
-
   //contain page value with variable
   var _currentPageValue = 0.0;
-
   //80% bigger than crrunt size
   double _scaleFacto = 0.8;
-
   //get parrent height
   double _height = 220;
 
@@ -44,17 +40,21 @@ class _ProdPageBodyState extends State<ProdPageBody> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      // for debug adding
-      // color: Colors.redAccent,
-      height: 320,
-      child: PageView.builder(
-          controller: pageController,
-          itemCount: 5,
-          itemBuilder: (context, position) {
-            //create a function that return a container with index positions
-            return _buildPageProdItem(position);
-          }),
+    return Column(
+      children: [
+        Container(
+          // for debug adding
+          // color: Colors.redAccent,
+          height: 320,
+          child: PageView.builder(
+              controller: pageController,
+              itemCount: 5,
+              itemBuilder: (context, position) {
+                //create a function that return a container with index positions
+                return _buildPageProdItem(position);
+              }),
+        ),
+      ],
     );
   }
 

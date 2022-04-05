@@ -17,6 +17,7 @@ class _MainProdPageState extends State<MainProdPage> {
     return Scaffold(
       body: Column(
         children: [
+          // showing header
           Container(
             child: Container(
               margin: EdgeInsets.only(top: 45, bottom: 12),
@@ -58,6 +59,7 @@ class _MainProdPageState extends State<MainProdPage> {
               ),
             ),
           ),
+          // shoing prod body
           ProdPageBody()
         ],
       ),
