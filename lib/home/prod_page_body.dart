@@ -113,8 +113,16 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black38,
-                    blurRadius: 8.0,
+                    blurRadius: 6.0,
                     offset: Offset(0, 5),
+                  ),
+                  BoxShadow(
+                    color: Colors.white,
+                    offset: Offset(-5, 0),
+                  ),
+                  BoxShadow(
+                    color: Colors.white,
+                    offset: Offset(5, 0),
                   ),
                 ],
                 color: Colors.white,
