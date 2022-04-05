@@ -190,6 +190,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                       height: 20,
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         TextAndIconWidget(
                             icon: Icons.circle_sharp,
