@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:food_dev_sys/utils/dimension.dart';
 
 class BigText extends StatelessWidget {
   //input paramitter
@@ -22,7 +23,7 @@ class BigText extends StatelessWidget {
       overflow: overFlow,
       style: TextStyle(
         fontFamily: 'Roboto',
-        fontSize: size,
+        fontSize: Dimensions.font20,
         color: color,
         fontWeight: FontWeight.w400,
       ),

@@ -11,5 +11,16 @@ class Dimensions {
   static double pageViewTextContainer = screenHeight / 7.03;
   // 844 is screen Height in 10 pixel scale
   // 844/10  = 84.4
-  static double height10 = screenHeight/
+  static double height10 = screenHeight / 84.4;
+  static double height20 = screenHeight / 42.2;
+  static double height30 = screenHeight / 28.13;
+  static double height15 = screenHeight / 56.27;
+
+  //font dynamic size
+
+  static double font20 = screenHeight / 42.2;
+  static double font15 = screenHeight / 56.27;
+  static double font10 = screenHeight / 84.4;
+  static double font18 = screenHeight / 46.88;
+  static double font12 = screenHeight / 70.33;
 }
