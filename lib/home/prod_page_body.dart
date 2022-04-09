@@ -124,7 +124,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           child: ListView.builder(
             // physics: AlwaysScrollableScrollPhysics(), //its working sparate Scrollable
             physics: NeverScrollableScrollPhysics(),
-            shrinkWrap: true,
+            // shrinkWrap: true,
             itemCount: 10,
             itemBuilder: (context, index) {
               return Container(
@@ -132,17 +132,32 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                     left: Dimensions.height14, right: Dimensions.height14),
                 child: Row(
                   children: [
+                    //image section
                     Container(
                       height: 120,
                       width: 120,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius:
-                            BorderRadius.circular(Dimensions.height30),
+                            BorderRadius.circular(Dimensions.height10),
                         image: DecorationImage(
-                          // fit: BoxFit.cover,
-                          image: AssetImage("image/prod3.png"),
+                          fit: BoxFit.cover,
+                          image: AssetImage("image/prod4.png"),
                         ),
+                      ),
+                    ),
+                    //text container
+                    Container(
+                      height: 100,
+                      width: 200,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(10),
+                          topLeft: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10),
+                        ),
+                        color: Colors.white,
                       ),
                     ),
                   ],
