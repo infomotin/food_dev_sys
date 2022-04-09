@@ -55,7 +55,7 @@ class _MainProdPageState extends State<MainProdPage> {
                           offset: Offset(5, 5),
                         ),
                       ],
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(Dimensions.font15),
                       color: Colors.blue,
                     ),
                   )

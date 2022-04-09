@@ -117,7 +117,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 left: Dimensions.height15, right: Dimensions.height15),
             decoration: BoxDecoration(
                 color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
-                borderRadius: BorderRadius.circular(30),
+                borderRadius: BorderRadius.circular(Dimensions.height30),
                 image: DecorationImage(
                     fit: BoxFit.cover, image: AssetImage("image/prod2.png"))),
           ),
@@ -132,7 +132,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                   right: Dimensions.height30,
                   bottom: Dimensions.height30),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(Dimensions.font20),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black38,
