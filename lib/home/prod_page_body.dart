@@ -80,6 +80,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         SizedBox(
           height: Dimensions.height18,
         ),
+        //separate two Section using Sizeebox
+        // Populer text
         Container(
           margin: EdgeInsets.only(
             left: Dimensions.height30,
@@ -106,12 +108,44 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 width: Dimensions.height10,
               ),
               Container(
+                margin: const EdgeInsets.only(bottom: 2),
                 child: SmallText(
                   text: "Product Listing",
                   color: Colors.blueGrey,
                 ),
               ),
             ],
+          ),
+        ),
+        //separate two Section using SizeBox
+        //List of Image And Information
+        Container(
+          height: 700,
+          child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return Container(
+                margin: EdgeInsets.only(
+                    left: Dimensions.height14, right: Dimensions.height14),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 120,
+                      width: 120,
+                      decoration: BoxDecoration(
+                        borderRadius:
+                            BorderRadius.circular(Dimensions.height20),
+                        color: Colors.white,
+                        image: DecorationImage(
+                          // fit: BoxFit.cover,
+                          image: AssetImage("image/prod3.png"),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
           ),
         )
       ],
