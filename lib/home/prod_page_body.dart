@@ -76,6 +76,23 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           ),
         ),
         //Popular Text Section
+        //separate two Section using Sizeebox
+        SizedBox(
+          height: Dimensions.height18,
+        ),
+        Container(
+          margin: EdgeInsets.only(
+            left: Dimensions.height30,
+          ),
+          child: Row(
+            children: [
+              BigText(
+                text: "Populer",
+                color: Colors.black26,
+              )
+            ],
+          ),
+        )
       ],
     );
   }
