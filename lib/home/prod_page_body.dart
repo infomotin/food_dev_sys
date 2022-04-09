@@ -96,6 +96,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 width: Dimensions.height10,
               ),
               Container(
+                margin: const EdgeInsets.only(bottom: 3),
                 child: BigText(
                   text: ".",
                   color: Colors.black26,
