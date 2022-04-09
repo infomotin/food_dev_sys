@@ -44,8 +44,8 @@ class _MainProdPageState extends State<MainProdPage> {
                     ],
                   ),
                   Container(
-                    width: 45,
-                    height: 45,
+                    width: Dimensions.height45,
+                    height: Dimensions.height45,
                     child: Icon(Icons.search, color: Colors.white),
                     decoration: BoxDecoration(
                       boxShadow: [

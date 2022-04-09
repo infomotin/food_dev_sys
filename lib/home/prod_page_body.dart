@@ -85,6 +85,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
             left: Dimensions.height30,
           ),
           child: Row(
+            //Every thing Are Come down From bottom line
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               BigText(
                 text: "Populer",
