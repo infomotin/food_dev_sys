@@ -122,7 +122,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         Container(
           height: 700,
           child: ListView.builder(
-            physics: AlwaysScrollableScrollPhysics(),
+            // physics: AlwaysScrollableScrollPhysics(), //its working sparate Scrollable
+            physics: NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemCount: 10,
             itemBuilder: (context, index) {

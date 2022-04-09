@@ -64,7 +64,11 @@ class _MainProdPageState extends State<MainProdPage> {
             ),
           ),
           // shoing prod body
-          ProdPageBody()
+          Expanded(
+            child: SingleChildScrollView(
+              child: ProdPageBody(),
+            ),
+          ),
         ],
       ),
     );
