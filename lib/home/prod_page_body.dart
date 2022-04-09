@@ -89,7 +89,25 @@ class _ProdPageBodyState extends State<ProdPageBody> {
               BigText(
                 text: "Populer",
                 color: Colors.black26,
-              )
+              ),
+              SizedBox(
+                width: Dimensions.height10,
+              ),
+              Container(
+                child: BigText(
+                  text: ".",
+                  color: Colors.black26,
+                ),
+              ),
+              SizedBox(
+                width: Dimensions.height10,
+              ),
+              Container(
+                child: SmallText(
+                  text: "Product Listing",
+                  color: Colors.blueGrey,
+                ),
+              ),
             ],
           ),
         )
