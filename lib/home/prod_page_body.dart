@@ -135,8 +135,9 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                       height: 120,
                       width: 120,
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(20),
-                        color: Colors.white38,
+                        color: Colors.white,
+                        borderRadius:
+                            BorderRadius.circular(Dimensions.height30),
                         image: DecorationImage(
                           // fit: BoxFit.cover,
                           image: AssetImage("image/prod3.png"),
