@@ -129,7 +129,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
             itemBuilder: (context, index) {
               return Container(
                 margin: EdgeInsets.only(
-                    left: Dimensions.height14, right: Dimensions.height14),
+                    left: Dimensions.height15, right: Dimensions.height15),
                 child: Row(
                   children: [
                     //image section
@@ -147,17 +147,89 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                       ),
                     ),
                     //text container
-                    Container(
-                      height: 100,
-                      width: 200,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(10),
-                          topLeft: Radius.circular(10),
-                          bottomLeft: Radius.circular(10),
-                          bottomRight: Radius.circular(10),
+                    Expanded(
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(10),
+                            topLeft: Radius.circular(10),
+                            bottomLeft: Radius.circular(10),
+                            bottomRight: Radius.circular(10),
+                          ),
+                          color: Colors.black12,
                         ),
-                        color: Colors.white,
+                        child: Padding(
+                          padding: EdgeInsets.only(
+                            left: 10,
+                            right: 10,
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              BigText(text: "Chinese Side"),
+                              SizedBox(
+                                height: Dimensions.height10,
+                              ),
+                              Row(
+                                children: [
+                                  Wrap(
+                                    children: List.generate(
+                                        5,
+                                        (index) => Icon(
+                                              Icons.star,
+                                              color: Colors.red,
+                                              size: Dimensions.height15,
+                                            )),
+                                  ),
+                                  SizedBox(
+                                    width: Dimensions.height10,
+                                  ),
+                                  SmallText(
+                                    text: "4.5",
+                                    color: Colors.black54,
+                                  ),
+                                  SizedBox(
+                                    width: Dimensions.height10,
+                                  ),
+                                  SmallText(text: "1254"),
+                                  SizedBox(
+                                    width: Dimensions.height10,
+                                  ),
+                                  SmallText(
+                                    text: "Comments.",
+                                    color: Colors.black45,
+                                  ),
+                                ],
+                              ),
+                              //create space
+                              SizedBox(
+                                height: Dimensions.height20,
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  TextAndIconWidget(
+                                      icon: Icons.circle_sharp,
+                                      text: "Normal",
+                                      textColor: Colors.black45,
+                                      iconColor: Colors.brown),
+                                  TextAndIconWidget(
+                                      icon: Icons.location_on,
+                                      text: "1.7 Km",
+                                      textColor: Colors.pink,
+                                      iconColor: Colors.lightBlue),
+                                  TextAndIconWidget(
+                                      icon: Icons.access_time,
+                                      text: "35 Minutes",
+                                      textColor: Colors.red,
+                                      iconColor: Colors.black45),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ],
@@ -309,7 +381,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                             textColor: Colors.red,
                             iconColor: Colors.black45),
                       ],
-                    )
+                    ),
                   ],
                 ),
               ),
