@@ -48,6 +48,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        // slider
         Container(
           // for debug adding
           // color: Colors.redAccent,
@@ -60,6 +61,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 return _buildPageProdItem(position);
               }),
         ),
+        // dots
         new DotsIndicator(
           dotsCount: 5,
           position: _currentPageValue,
@@ -73,6 +75,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
             ),
           ),
         ),
+        //Popular Text Section
+
       ],
     );
   }
