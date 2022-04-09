@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_dev_sys/home/prod_page_body.dart';
+import 'package:food_dev_sys/utils/dimension.dart';
 import 'package:food_dev_sys/widgets/big_text.dart';
 import 'package:food_dev_sys/widgets/smal_text.dart';
 
@@ -21,8 +22,10 @@ class _MainProdPageState extends State<MainProdPage> {
           // showing header
           Container(
             child: Container(
-              margin: EdgeInsets.only(top: 45, bottom: 12),
-              padding: EdgeInsets.only(left: 20, right: 20),
+              margin: EdgeInsets.only(
+                  top: Dimensions.height45, bottom: Dimensions.font15),
+              padding: EdgeInsets.only(
+                  left: Dimensions.height20, right: Dimensions.height20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

@@ -113,7 +113,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           Container(
             //create a first slider
             height: Dimensions.pageViewContainer,
-            margin: EdgeInsets.only(left: 15, right: 15),
+            margin: EdgeInsets.only(
+                left: Dimensions.height15, right: Dimensions.height15),
             decoration: BoxDecoration(
                 color: index.isEven ? Color(0xFFcccab0) : Color(0xFF92cab0),
                 borderRadius: BorderRadius.circular(30),
@@ -169,22 +170,22 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                               (index) => Icon(
                                     Icons.star,
                                     color: Colors.red,
-                                    size: 15,
+                                    size: Dimensions.height15,
                                   )),
                         ),
                         SizedBox(
-                          width: 10,
+                          width: Dimensions.height10,
                         ),
                         SmallText(
                           text: "4.5",
                           color: Colors.black54,
                         ),
                         SizedBox(
-                          width: 10,
+                          width: Dimensions.height10,
                         ),
                         SmallText(text: "1254"),
                         SizedBox(
-                          width: 10,
+                          width: Dimensions.height10,
                         ),
                         SmallText(
                           text: "Comments.",
