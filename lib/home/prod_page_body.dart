@@ -76,7 +76,6 @@ class _ProdPageBodyState extends State<ProdPageBody> {
           ),
         ),
         //Popular Text Section
-
       ],
     );
   }
