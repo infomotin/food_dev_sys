@@ -149,7 +149,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                     //text container
                     Expanded(
                       child: Container(
-                        height: 100,
+                        height: 120,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.only(
                             topRight: Radius.circular(10),
@@ -161,13 +161,13 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                         ),
                         child: Padding(
                           padding: EdgeInsets.only(
-                            left: 10,
-                            right: 10,
+                            left: Dimensions.height10,
+                            right: Dimensions.height10,
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              BigText(text: "Chinese Side"),
+                              BigText(text: "This is Vary Good Food For You"),
                               SizedBox(
                                 height: Dimensions.height10,
                               ),
@@ -175,7 +175,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                                 children: [
                                   Wrap(
                                     children: List.generate(
-                                        5,
+                                        10,
                                         (index) => Icon(
                                               Icons.star,
                                               color: Colors.red,
