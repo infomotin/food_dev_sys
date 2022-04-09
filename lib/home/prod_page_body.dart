@@ -126,7 +126,10 @@ class _ProdPageBodyState extends State<ProdPageBody> {
             child: Container(
               //create a first slider
               height: Dimensions.pageViewTextContainer,
-              margin: EdgeInsets.only(left: 30, right: 30, bottom: 30),
+              margin: EdgeInsets.only(
+                  left: Dimensions.height30,
+                  right: Dimensions.height30,
+                  bottom: Dimensions.height30),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
