@@ -122,6 +122,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         Container(
           height: 700,
           child: ListView.builder(
+            physics: AlwaysScrollableScrollPhysics(),
+            shrinkWrap: true,
             itemCount: 10,
             itemBuilder: (context, index) {
               return Container(
@@ -133,9 +135,8 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                       height: 120,
                       width: 120,
                       decoration: BoxDecoration(
-                        borderRadius:
-                            BorderRadius.circular(Dimensions.height20),
-                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                        color: Colors.white38,
                         image: DecorationImage(
                           // fit: BoxFit.cover,
                           image: AssetImage("image/prod3.png"),
