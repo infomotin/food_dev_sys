@@ -147,7 +147,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                 color: Colors.white,
               ),
               child: Container(
-                padding: EdgeInsets.only(top: 10, left: 15, right: 15),
+                padding: EdgeInsets.only(top: 15, left: 15, right: 15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

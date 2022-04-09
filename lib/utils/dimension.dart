@@ -9,4 +9,7 @@ class Dimensions {
   static double pageView = screenHeight / 2.64;
   static double pageViewContainer = screenHeight / 3.84;
   static double pageViewTextContainer = screenHeight / 7.03;
+  // 844 is screen Height in 10 pixel scale
+  // 844/10  = 84.4
+  static double height10 = screenHeight/
 }
