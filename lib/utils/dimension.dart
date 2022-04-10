@@ -32,4 +32,6 @@ class Dimensions {
   //image size get dynamic
   static double listViewImg = screenHeight / 3.25;
   static double listViewTextContSize = screenHeight / 3.9;
+  //populer food image size 
+  static double populerProdImgSize = screenHeight / 2.42;
 }
