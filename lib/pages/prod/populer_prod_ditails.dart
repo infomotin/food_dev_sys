@@ -26,6 +26,9 @@ class PopulerProdDetails extends StatelessWidget {
               ),
             ),
           ),
+          Positioned(child: Row(
+
+          ),),
         ],
       ),
     );
