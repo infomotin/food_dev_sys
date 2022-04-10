@@ -78,7 +78,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         //Popular Text Section
         //separate two Section using Sizeebox
         SizedBox(
-          height: Dimensions.height18,
+          height: Dimensions.height30,
         ),
         //separate two Section using Sizeebox
         // Populer text
@@ -119,125 +119,99 @@ class _ProdPageBodyState extends State<ProdPageBody> {
         ),
         //separate two Section using SizeBox
         //List of Image And Information
-        Container(
-          height: 700,
-          child: ListView.builder(
-            // physics: AlwaysScrollableScrollPhysics(), //its working sparate Scrollable
-            physics: NeverScrollableScrollPhysics(),
-            // shrinkWrap: true,
-            itemCount: 10,
-            itemBuilder: (context, index) {
-              return Container(
-                margin: EdgeInsets.only(
-                    left: Dimensions.height15, right: Dimensions.height15),
-                child: Row(
-                  children: [
-                    //image section
-                    Container(
-                      height: 120,
-                      width: 120,
+        SizedBox(
+          height: Dimensions.height30,
+        ),
+        ListView.builder(
+          // physics: AlwaysScrollableScrollPhysics(), //its working sparate Scrollable
+          physics: NeverScrollableScrollPhysics(),
+          shrinkWrap: true,
+          itemCount: 10,
+          itemBuilder: (context, index) {
+            return Container(
+              margin: EdgeInsets.only(
+                  left: Dimensions.height15, right: Dimensions.height15),
+              child: Row(
+                children: [
+                  //image section
+                  Container(
+                    height: Dimensions.listViewImg,
+                    width: Dimensions.listViewImg,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(Dimensions.height10),
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage("image/prod3.png"),
+                      ),
+                    ),
+                  ),
+                  //text container
+                  Expanded(
+                    child: Container(
+                      height: Dimensions.listViewTextContSize,
                       decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius:
-                            BorderRadius.circular(Dimensions.height10),
-                        image: DecorationImage(
-                          fit: BoxFit.cover,
-                          image: AssetImage("image/prod4.png"),
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(10),
+                          topLeft: Radius.circular(10),
+                          bottomLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(10),
+                        ),
+                        color: Colors.white70,
+                      ),
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          left: Dimensions.height10,
+                          right: Dimensions.height10,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            BigText(
+                              text: "This is Vary Good Food For You",
+                            ),
+                            SizedBox(
+                              height: Dimensions.height10,
+                            ),
+                            SmallText(
+                              text: "With chinese is not Good Food`s For Us.",
+                            ),
+                            SizedBox(
+                              height: Dimensions.height10,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                TextAndIconWidget(
+                                  icon: Icons.circle_sharp,
+                                  text: "Normal",
+                                  textColor: Colors.black45,
+                                  iconColor: Colors.brown,
+                                ),
+                                TextAndIconWidget(
+                                  icon: Icons.location_on,
+                                  text: "1.7 Km",
+                                  textColor: Colors.pink,
+                                  iconColor: Colors.lightBlue,
+                                ),
+                                TextAndIconWidget(
+                                  icon: Icons.access_time,
+                                  text: "35 Minutes",
+                                  textColor: Colors.red,
+                                  iconColor: Colors.black45,
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    //text container
-                    Expanded(
-                      child: Container(
-                        height: 120,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.only(
-                            topRight: Radius.circular(10),
-                            topLeft: Radius.circular(10),
-                            bottomLeft: Radius.circular(10),
-                            bottomRight: Radius.circular(10),
-                          ),
-                          color: Colors.black12,
-                        ),
-                        child: Padding(
-                          padding: EdgeInsets.only(
-                            left: Dimensions.height10,
-                            right: Dimensions.height10,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              BigText(text: "This is Vary Good Food For You"),
-                              SizedBox(
-                                height: Dimensions.height10,
-                              ),
-                              Row(
-                                children: [
-                                  Wrap(
-                                    children: List.generate(
-                                        10,
-                                        (index) => Icon(
-                                              Icons.star,
-                                              color: Colors.red,
-                                              size: Dimensions.height15,
-                                            )),
-                                  ),
-                                  SizedBox(
-                                    width: Dimensions.height10,
-                                  ),
-                                  SmallText(
-                                    text: "4.5",
-                                    color: Colors.black54,
-                                  ),
-                                  SizedBox(
-                                    width: Dimensions.height10,
-                                  ),
-                                  SmallText(text: "1254"),
-                                  SizedBox(
-                                    width: Dimensions.height10,
-                                  ),
-                                  SmallText(
-                                    text: "Comments.",
-                                    color: Colors.black45,
-                                  ),
-                                ],
-                              ),
-                              //create space
-                              SizedBox(
-                                height: Dimensions.height20,
-                              ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  TextAndIconWidget(
-                                      icon: Icons.circle_sharp,
-                                      text: "Normal",
-                                      textColor: Colors.black45,
-                                      iconColor: Colors.brown),
-                                  TextAndIconWidget(
-                                      icon: Icons.location_on,
-                                      text: "1.7 Km",
-                                      textColor: Colors.pink,
-                                      iconColor: Colors.lightBlue),
-                                  TextAndIconWidget(
-                                      icon: Icons.access_time,
-                                      text: "35 Minutes",
-                                      textColor: Colors.red,
-                                      iconColor: Colors.black45),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              );
-            },
-          ),
-        )
+                  ),
+                ],
+              ),
+            );
+          },
+        ),
       ],
     );
   }
@@ -322,6 +296,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                     right: Dimensions.height15),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     BigText(text: "Chinese Side"),
                     SizedBox(
