@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_dev_sys/pages/home/main_prod_page.dart';
 import 'package:get/get.dart';
-import 'home/main_prod_page.dart';
+import 'pages/home/main_prod_page.dart';
 
 void main() {
   runApp(const MyApp());
