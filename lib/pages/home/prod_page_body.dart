@@ -296,9 +296,7 @@ class _ProdPageBodyState extends State<ProdPageBody> {
                   left: Dimensions.height15,
                   right: Dimensions.height15,
                 ),
-                child: AppColumn(
-                  text: "This is Diyanamic Text",
-                ),
+                child: AppColumn(text: "This is Diyanamic Text"),
               ),
             ),
           ),

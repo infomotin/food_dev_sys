@@ -67,8 +67,15 @@ class PopulerProdDetails extends StatelessWidget {
                 ),
                 color: Colors.white,
               ),
-              child: AppColumn(
-                text: "Another Diyanamic Text",
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  AppColumn(text: "Another Diyanamic Text"),
+                  SizedBox(
+                    height: Dimensions.height14,
+                  ),
+                  BigText(text: "Introduce"),
+                ],
               ),
             ),
           ),
