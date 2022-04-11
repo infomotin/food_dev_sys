@@ -13,6 +13,7 @@ class PopulerProdDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
@@ -80,6 +81,51 @@ class PopulerProdDetails extends StatelessWidget {
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: Container(
+        height: Dimensions.height30 * 4,
+        padding: EdgeInsets.only(
+          top: Dimensions.height30,
+          bottom: Dimensions.height30,
+          right: Dimensions.height20,
+          left: Dimensions.height20,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.blueGrey,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(Dimensions.height20 * 2),
+            topRight: Radius.circular(Dimensions.height20 * 2),
+          ),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: EdgeInsets.only(
+                top: Dimensions.height20,
+                bottom: Dimensions.height20,
+                left: Dimensions.height20,
+                right: Dimensions.height20,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(Dimensions.height20),
+                color: Colors.white,
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.remove,
+                    color: Colors.blue,
+                  ),
+                  BigText(text: "0"),
+                  Icon(
+                    Icons.add,
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
