@@ -117,11 +117,11 @@ class PopulerProdDetails extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   SizedBox(
-                    height: Dimensions.height10,
+                    width: Dimensions.height10,
                   ),
                   BigText(text: "0"),
                   SizedBox(
-                    height: Dimensions.height10,
+                    width: Dimensions.height10,
                   ),
                   Icon(
                     Icons.add,
