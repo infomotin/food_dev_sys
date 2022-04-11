@@ -130,6 +130,25 @@ class PopulerProdDetails extends StatelessWidget {
                 ],
               ),
             ),
+            Container(
+              padding: EdgeInsets.only(
+                top: Dimensions.height20,
+                bottom: Dimensions.height20,
+                left: Dimensions.height20,
+                right: Dimensions.height20,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(Dimensions.height20),
+                color: Colors.white,
+              ),
+              child: Row(
+                children: [
+                  BigText(
+                    text: "Add To Cart",
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
