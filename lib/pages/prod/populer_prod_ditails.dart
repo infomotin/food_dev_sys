@@ -116,7 +116,13 @@ class PopulerProdDetails extends StatelessWidget {
                     Icons.remove,
                     color: Colors.blue,
                   ),
+                  SizedBox(
+                    height: Dimensions.height10,
+                  ),
                   BigText(text: "0"),
+                  SizedBox(
+                    height: Dimensions.height10,
+                  ),
                   Icon(
                     Icons.add,
                     color: Colors.blue,
